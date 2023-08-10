@@ -2,23 +2,17 @@
 <html>
   <head>
     <title>Nos Casamos</title>
-    <style>
-      body {
-        background-color: rgb(26, 188, 156);
-      }
-    </style>
+    <meta charset="utf-8">
+     <link rel="stylesheet" type= "text/css" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
-    <h1>¡Subi tu Foto!</h1>
-    <style>
-      h1 {
-        background-color: whitesmoke;
-      }
-    </style>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-      <input type="file" name="file" />
-      <input type="submit" value="Upload" />
-    </form>
+    <h1 class="title">&iexcl;Subi tu Foto!</h1>
+
+   <form action="upload.php" method="POST" enctype="multipart/form-data" onsubmit="uploadImage(event)" id="imageForm">
+     <input type="file" name="image" id="imageInput" accept="image/*" onchange="previewImage(event)">
+     <img id="imagePreview" src="#" alt="Vista previa de la imagen" height="500px">
+     <input type="submit" value="Subir imagen">
+   </form>
   </body>
-  <script></script>
 </html>
