@@ -2,17 +2,42 @@
 <html>
   <head>
     <title>Nos Casamos</title>
-    <meta charset="utf-8">
-     <link rel="stylesheet" type= "text/css" href="style.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="script.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" />
   </head>
   <body>
-    <h1 class="title">&iexcl;Subi tu Foto!</h1>
+    <h1 class="title">&iexcl;Leonor & Ezequiel!</h1>
+    <h2>nos casamos , comparti tu recuerdo</h2>
 
-   <form action="upload.php" method="POST" enctype="multipart/form-data" onsubmit="uploadImage(event)" id="imageForm">
-     <input type="file" name="image" id="imageInput" accept="image/*" onchange="previewImage(event)">
-     <img id="imagePreview" src="#" alt="Vista previa de la imagen" height="500px">
-     <input type="submit" value="Subir imagen">
-   </form>
+    <form
+      action="upload.php"
+      method="POST"
+      enctype="multipart/form-data"
+      onsubmit="uploadImage(event)"
+      id="imageForm"
+    >
+      <input
+        type="file"
+        name="image"
+        id="imageInput"
+        accept="image/*"
+        onchange="previewImage(event)"
+      />
+      <img
+        id="imagePreview"
+        src="#"
+        alt="Vista previa de la imagen"
+        height="350px"
+      />
+      <input type="submit" value="Subir imagen" />
+    </form>
+    <div class="gallery">
+      <img src="image1.jpg" alt="" />
+      <img src="image2.jpg" alt="" />
+      <img src="image3.jpg" alt="" />
+      <img src="image4.jpg" alt="" />
+    </div>
   </body>
 </html>
